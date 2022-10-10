@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AddressBookSystem
 {
-    internal class Contact
+    internal class Contacts
     {
         //decclaring variabls
         string firstName, lastName, city, state, address, email;
@@ -14,7 +14,7 @@ namespace AddressBookSystem
         long phoneNumber;
 
         // creating a a constructor to initialize variables
-        public void Contacts(string firstName, string lastName, string city, string state, string address, string email, int zip, long phoneNumber)
+        public Contacts(string firstName, string lastName, string city, string state, string address, string email, int zip, long phoneNumber)
         {
             this.firstName = firstName;
             this.lastName = lastName;

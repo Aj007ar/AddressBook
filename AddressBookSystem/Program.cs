@@ -1,10 +1,28 @@
-﻿namespace AddressBookSystem
+﻿using AddressBookSystem;
+using System.Collections;
+Console.WriteLine("Welcome to Adddress book system");
+int num;
+string key = "z";
+
+
+AddressBookDetails addressbook = new AddressBookDetails();
+
+while (key != "n")
 {
-    internal class Program
+    Console.WriteLine("Select an Option");
+    Console.WriteLine("1 - Addcontact, 2 - Display contact, 3 - deleteContact");
+    num = Convert.ToInt32(Console.ReadLine());
+    switch (num)
     {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Welcome Address Book system");
-        }
+        case 1:
+            addressbook.AddContacts();
+            break;
+        case 2:
+            addressbook.display();
+            break;
     }
+    Console.WriteLine("Do u want to continue? Press y/n");
+
+    key = Console.ReadLine();
 }
+Console.ReadLine();
