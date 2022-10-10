@@ -8,7 +8,6 @@ namespace AddressBookSystem
 {
     internal class Contacts
     {
-        //decclaring variabls
         string firstName, lastName, city, state, address, email;
         int zip;
         long phoneNumber;
@@ -40,7 +39,7 @@ namespace AddressBookSystem
         {
             return lastName;
         }
-        public void GetFirstName(string lastName)
+        public void SetLastName(string lastName)
         {
             this.lastName = lastName;
         }
